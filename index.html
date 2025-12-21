@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset= "utf-8" />
+    <title>SKK gokko</title>
+
+    <script type="text/javascript" src="./dxopal-1.6.0.min.js"></script>
+    <script type="text/ruby">
+      DXOpal.dump_error{ require_remote "main.rb?#{Time.now}" }
+    </script>
+
+    <style>
+      @font-face {
+          font-family: "monospace_custom";
+          src: url("./font/Firge-Bold.ttf");
+      }
+
+      * {
+        font-family: monospace;
+        font-weight: 400;
+        font-style: normal;
+        color: #333;
+      }
+
+      body {
+        padding: 0.5rem 5%;
+      }
+
+      hr {
+        border: solid  #ccc;
+        border-width: 0.1rem 0 0 0;
+      }
+
+      span.key {
+        background: #eed;
+        display: inline-block;
+        padding: 0.1rem 0.2rem;
+        margin: 0.1rem;
+        border-radius: 0.2rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--
+    <a href="../index.html">back</a>
+    <br />
+    <br />
+    -->
+    <div id="dxopal-loading"></div>
+    <canvas id="dxopal-canvas"></canvas>
+    <div id="dxopal-errors"></div>
+
+    <hr />
+
+    <pre>
+● 注意
+
+- 英語キーボードでは動作確認できていません
+- 例文で使われていない漢字は変換できません
+
+
+● 操作
+
+<span class="key">S-SPC</span>（Shift + space） または <span class="key">→</span> : 現在の例文をスキップして次の例文に進む
+<span class="key">C-h</span>（Ctrl + h）: バックスペースと同じ
+
+基本的な入力方法については以下を参照してください:
+- <a href="https://ddskk.readthedocs.io/ja/latest/05_basic.html">5. 基本的な使い方 — ddskk 17.1 ドキュメント</a>
+- <a href="https://emacs-jp.github.io/tips/skk-intro">かな漢字変換プログラム SKK の紹介 | Emacs JP</a>
+
+
+● 日本語キーボードで <span class="key">「</span>, <span class="key">」</span> が入力できない場合
+
+- それぞれ <span class="key">@</span>, <span class="key">[</span> のキーで入力できる場合があります
+- 漢字の変換と同じ要領で「かっこ」から変換することもできます
+  （辞書登録してあります）
+
+
+● リポジトリ
+
+<a href="https://github.com/sonota88/skk-gokko">https://github.com/sonota88/skk-gokko</a>
+    </pre>
+  </body>
+</html>
