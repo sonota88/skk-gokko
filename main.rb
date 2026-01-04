@@ -118,7 +118,7 @@ def draw_font(x, y, text, font, color:)
     when "opal"
       case font.size
       when FONT_L.size then 9
-      when FONT_S.size    then 5
+      when FONT_S.size then 5
       else 0
       end
     when "jruby"
@@ -200,7 +200,7 @@ class MatchCharEffect < EffectBase
 
     Window.draw_box_fill(
       0, 0, WIN_W, WIN_H,
-      [alpha, 255,255,255]
+      [alpha, 255, 255, 255]
     )
   end
 
