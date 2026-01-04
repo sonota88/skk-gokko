@@ -23,7 +23,7 @@ when "jruby", "ruby"
   require_relative "editor"
   require_relative "dict"
   require_relative "sound"
-  require_relative "example_data"
+  require_relative "examples"
 
   names = Font.install(File.expand_path("~/.fonts/Firge-Bold.ttf"))
   font_name = names[0]
